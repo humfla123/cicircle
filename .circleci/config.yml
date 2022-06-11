@@ -12,7 +12,7 @@ jobs: # conditional steps may also be defined in `commands:`
       - when:
           condition: <<parameters.custom_checkout>>
           steps:
-            - run: sudo apt update
+            - run: sudo apt update && echo "SERVER UPDATES"
       - unless:
           condition: <<parameters.custom_checkout>>
           steps:
