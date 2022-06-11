@@ -15,6 +15,7 @@ jobs:
     steps:
       - checkout
       - run:
+      sudo apt update
           name: "Say hello"
           command: "echo Hello, World!"
 
